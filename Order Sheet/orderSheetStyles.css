@@ -1,0 +1,104 @@
+*{
+    box-sizing: border-box;
+
+}
+html{
+       font-size: 16px;
+}
+body{
+    margin: 0;
+    background-color: rgb(157, 162, 167);
+    font-family: 'Bookman old style', serif;
+}
+.page-a4{
+    width: 8.5in;
+    height: 11in;
+    background: #fff;
+    margin: 20px auto;
+    border: 1px solid grey;
+    box-shadow: 1px 1px 10px 0 rgb(78, 78, 78), -1px -1px 10px 0 rgb(78, 78, 78);
+}
+header > img{
+    width: 120px;
+    height: 100px;
+    filter: grayscale(80%);
+}
+
+.headings p{
+    margin:0;
+    padding:0;
+    line-height: 1.2;
+    text-align: center;
+    font-size: 1.11rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+}.headings p:last-of-type{
+    text-transform: capitalize;
+    font-weight:normal;
+
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 80px 40px 20px;
+    
+}
+header > #logo{
+    justify-content:flex-start;
+    align-items: center; 
+}
+header > .headings{
+    justify-content:flex-end;
+    align-items: center;    
+}
+h1{
+    margin-left:3.5em;
+    margin-top: 1.2em;
+    font-size: 1.4em;
+    text-transform: uppercase;
+    text-decoration: underline;
+    letter-spacing:2px;
+}
+.para-container{
+    text-align: justify;
+    font-size: 1.1em;
+    line-height: 2;
+    padding: 10px 80px;
+    margin-bottom: 2em;
+}
+.para-title{
+    font-weight: bold;
+}
+#item{
+    margin-left: 4em;
+    
+}
+.stamp{
+    font-size: 1.1em;
+    line-height: 1;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    margin-left: 25em;
+    margin-right: 5em;
+}
+.stamp > p{
+    margin: 0;
+    padding: 0;
+}
+.copies-forward{
+    
+    font-size: 1.1em;
+    line-height: 1;
+    padding: 10px 80px;
+    margin-bottom: 2em;
+}
+.indent{
+    margin-left: 4em;
+}
+.double-indent{
+    margin-left: 5em;
+}

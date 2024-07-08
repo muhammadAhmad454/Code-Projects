@@ -1,0 +1,59 @@
+body{
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.main-header{
+    height: 100px;
+    background-color:darkslategrey;
+}
+.logo{
+    width: 40%;
+    /* background-color: aqua;
+    height: 100px; */
+    display: inline-block;
+    float: left;
+}
+.logo img{
+    height: 70px;
+    margin: 15px 5px;
+}
+.menu{
+    width: 60%;
+    /* background-color:brown;
+    height: 100px; */
+    display: inline-block;
+    float: right;
+}
+.menu ul{
+    list-style: none;
+}
+.menu ul li{
+    display: inline-block;
+    margin: 25px 10px;
+    padding: 15px 10px;
+    /* border: 1px solid black; */
+    /* background-color:chocolate; */
+}
+.menu ul li a{
+    text-decoration: none;
+    color: white;
+}
+.button{
+    border-radius: 50px;
+    color: aliceblue;
+    
+}
+#apply-online{
+    background-color: red;
+    padding:10px 20px;
+}
+#candidate-login{
+    background-color:darkgreen;
+    padding:10px 20px;
+}
+.menu ul li a:hover{
+    color:darkorange;
+}

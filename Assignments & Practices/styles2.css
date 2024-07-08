@@ -1,0 +1,6 @@
+div[id="myId"] p {
+    color: green;
+}
+div > p[class="myClass"]{
+    color: orange;
+}
