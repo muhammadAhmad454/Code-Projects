@@ -1,0 +1,109 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #aaaaaa;
+    
+}
+#main{
+    background-color: rgba(255,255,255,0.7);
+    margin:0 auto;
+    border-radius: 1%;
+    width: 90%;
+    height:auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#title{
+    padding:35px 0;
+    font-size: 35px;
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: -1px;
+    font-weight: bolder;
+}
+.description{
+    padding-bottom: 30px;
+    text-align: center;
+    font-style: italic;
+    color:#144474;
+}
+#img-div{
+    /* border: 2px solid black; */
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 2%;
+}
+#img-div > #image{
+    display:block;
+    width: 100%;
+    border-radius: 2%;
+    box-shadow: 1px 1px 5px 0 #333333;
+    max-width:100%;
+    min-width: 200px;
+}
+#img-caption{
+    padding:20px 0;
+    text-align: justify;
+    line-height: 1.4;
+    text-indent: 5%;
+    font-style: oblique;
+    color:#144474;
+    font-weight: bold;
+}
+
+#timeline-info{
+    color: #c72128;
+    text-align: left;
+    padding:50px 0px;
+    text-align: center;
+    text-decoration:overline;
+}
+
+
+#tribute-info > ul{
+    margin:0 auto 20px;
+    width:70%;
+    
+}
+#tribute-info > ul > li{
+    padding: 0.9em 0;
+    text-align: justify;
+}
+.year{
+    font-size: 20px;
+    font-weight: bold;
+    color:#144474;
+}
+.info{
+    color:#333333;
+    font-size: 18px;
+}
+.year::after{
+    content: " - ";
+    color:#c72128;
+}
+blockquote{
+    width: 90%;
+    margin: 25px auto;
+    text-align: justify;
+    line-height: 1.5;
+}
+blockquote cite{
+    text-align: center;
+}
+h3{
+    color:#c72128;
+    text-align: center;
+    font-size: 15px;
+    padding-bottom: 50px;
+
+}
+h3 > a{
+    color: #144474;
+    text-decoration: none;
+}
+h3 > a:hover{
+    color:orangered;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="surveyFormstyles.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <h1 id="title">Survey of Tandoor Application</h1>
+    <p id="description">Thank you for taking the time to help us improve the Tandoor application platform</p>
+    <form id="survey-form" action="#" method="post">
+        <fieldset>
+            <label id="name-label"> Name: 
+                <input type="text" name="name" id="name" placeholder="Muhammad Ahmad" required>
+            </label>
+            <label id="email-label"> Email: 
+                <input type="email" name="email" id="email" placeholder="abc123@mail.com" required>
+            </label>
+            <label id="number-label"> Age: 
+                <input type="number" name="age" id="number" min=10 max=99 placeholder="10">
+            </label>
+            <label for="dropdown"> What is your Role: 
+                <select name="role" id="dropdown">
+                    <option value="0">(Select One)</option>
+                    <option value="1">Student</option>
+                    <option value="2">Employee</option>
+                    <option value="3">House Wise</option>
+                    <option value="4">Business Man</option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset>
+            <label for="">Would you recommend Tandoor to a friend?</label>
+            <label for="definite-refer"><input class="inline" type="radio" name="refer-type" id="definite-refer" value="definitely">Definitely</label>
+            <label for="maybe-refer"><input class="inline" type="radio" name="refer-type" id="maybe-refer" value="maybe">Maybe</label>
+            <label for="not-refer"><input class="inline" type="radio" name="refer-type" id="not-refer" value="notsure">Not Sure</label>
+
+            <label for="">What would you like to see improved?</label>
+            <label for="inside"><input class="inline" type="checkbox" name="improvement" id="inside" value="inside">Inside</label>
+            <label for="outside"><input class="inline" type="checkbox" name="improvement" id="outside" value="outside">Outside</label>
+            <label for="payment"><input class="inline" type="checkbox" name="improvement" id="payment" value="payment">Payment</label>
+            <label for="kitchen"><input class="inline" type="checkbox" name="improvement" id="kitchen" value="kitchen">Kitchen</label>
+            <label for="chef"><input class="inline" type="checkbox" name="improvement" id="chef" value="chef">Chef</label>
+            <label for="comment"> Any Comments or Suggestions?
+                <textarea name="comments" id="comment" cols="20" rows="6" placeholder="Payment method must be updated..."></textarea>
+            </label>
+        </fieldset>
+        <button type="submit" id="submit">Submit</button>
+    </form>
+    <!-- <script src="script.js"></script> -->
+</body>
+</html>

@@ -1,0 +1,204 @@
+/* 
+Your portfolio should have at least one media query
+
+The height of the welcome section should be equal to the height of the viewport
+
+The navbar should always be at the top of the viewport -->
+*/
+:root {
+  --main-white: #f0f0f0;
+  --main-red: #be3144;
+  --main-blue: #45567d;
+  --main-gray: #303841;
+  --main-golden: rgb(245, 147, 49);
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  /* border: 1px solid; */
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: 'Geologica', sans-serif;
+  font-size: 100.00%;
+}
+
+body {
+  
+  background: linear-gradient(180deg,
+    rgb(49, 147, 249),
+     rgb(249, 147, 49)
+     );
+  /* height: 200vh; */
+
+
+}
+
+#navbar {  
+  background-color: rgba(255, 255, 255,0.8);
+  width: 95vw;
+  position: fixed;
+  top: 2%;
+  left: 2%;
+  right: 5%;
+  border-radius: 1rem;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+  z-index: 10;
+ }
+
+
+nav ul {
+  list-style: none;
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav ul li {
+    display: flex;
+    margin-right: 2rem;
+}
+
+#navbar a {
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--main-red);
+  display: block;
+  padding: 1rem;
+}
+
+#navbar a:hover {
+  color: var(--main-golden);
+  border-bottom: 2px solid var(--main-red);
+}
+
+
+/* designing for welcome section  */
+#welcome-section{
+  width: 100%;
+  height: 100vh;
+  background: url(images/bg-design-1.jpg) no-repeat
+   fixed 
+   center 
+   0px;
+   background-size: cover;  
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+.welcome-title{
+  font-size: 2rem;
+  font-weight: 900;
+}
+#welcome-subtitle{
+  font-size: 1.1rem;
+  margin:25px auto;
+  font-style: italic;
+  font-weight: 400;
+  color: black;
+}
+#title1{
+  color: black;
+  font-size: 2.5rem;
+}
+#title2{
+  color: var(--main-golden);
+}
+
+
+/* styling for projects  */
+#projects{
+  width: 100%;
+
+}
+.project-box{
+  width: 40%;
+  height: 40%;
+
+}
+.project-box img{
+  width: 100%;
+}
+
+
+/* design for project section  */
+
+#projects{
+  text-align: center;
+  width: 80%;
+  padding: 6rem 2rem;
+  margin: 0 auto;
+}
+#project-header-title{
+  color: var(--main-red);
+  margin: 0 auto 4rem auto;
+  max-width: 640px;
+  font-size: 2.5rem;
+  padding-bottom: 2rem;
+  border-bottom: 0.2rem solid var(--main-white);
+}
+#project-grid-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  max-width: 1280px;
+  width: 100%;
+  grid-gap: 6rem 2rem;
+  
+}
+#project-grid-container a{
+  text-decoration: none;
+  color: var(--main-white);
+
+}
+.project-image{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+#project-grid-container p{
+  max-width:640px;
+  background-color: #be3144;
+  padding: 1.2rem 0.5rem;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+}
+/* .code:hover{
+  color: var(--main-white);
+  transition: background 0.3s ease-out;
+} */
+.project{
+  background-color: var(--main-red);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+}
+#showAll{
+  margin: 8rem auto;
+}
+#showAll a{
+  text-decoration: none;
+  background-color:  var(--main-blue);
+  padding: 1rem 4rem;
+  border-radius: 10px;
+  color: var(--main-white);
+  transition: background 0.3s ease-out;
+}
+#showAll a:hover{
+  background-color:  var(--main-red);
+}
+.code{
+  color: var(--main-red);
+  transition: color 0.3s ease-out;
+}
+
+@media screen and (max-width:700px){
+  html {
+    font-size: 72.37%;
+  }
+}

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Landing</title>
+    <link rel="stylesheet" href="productLandingStyles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
+    <!-- Note: Be sure to add <link rel="stylesheet" href="styles.css"> in your HTML to link your stylesheet and apply your CSS -->
+
+
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+</head>
+
+<body>
+    <!-- Your product landing page should have a header element with a corresponding id="header"   -->
+    <header id="header">
+        <!-- You can see an image within the header element with a corresponding id="header-img" (A logo would make a good image here)  -->
+        <img src="goldencheetahlogo.png" alt="logo" id="header-img">
+        <!-- Within the #header element, you can see a nav element with a corresponding id="nav-bar" -->
+        <nav id="nav-bar">
+            <!-- You can see at least three clickable elements inside the nav element, each with the class nav-link When you click a .nav-link button in the nav element, you are taken to the corresponding section of the landing page -->
+            <ul>
+                <li><a href="#Features" class="nav-link">Features</a></li>
+                <li><a href="#How_it_Works" class="nav-link">How it Works</a></li>
+                <li><a href="#Pricing" class="nav-link">Pricing</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="display-info">
+        <!-- Your landing page has a form element with a corresponding id="form" -->
+        <form method="post" action="https://www.freecodecamp.com/email-submit" id="form">
+            <h2>Join Us...</h2>
+            <!-- 
+         Within the form, there is an input field with id="email" where you can enter an email address 
+         The #email input field should have placeholder text to let users know what the field is for
+         The #email input field uses HTML5 validation to confirm that the entered text is an email address -->
+            <div class="merge">
+                <input type="email" id="email" placeholder="enter valid email address">
+                <!-- <a id="submit" href="#submit"><i class="fa fa-arrow"></i>Get Started</a> -->
+                <input type="submit" id="submit" value="Get Started">
+            </div>
+
+        </form>
+    </div>
+
+    <!-- section for features -->
+    <section id="Features">
+        <h2 class="heading-title">Features</h2>
+
+        <div class="grid">
+            <div class="icon">
+                <img src="goldencheetahlogo.png" alt="icons">
+            </div>
+            <div class="desc">
+                <h3>Premimum Material</h3>
+                <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.
+
+                </p>
+            </div>
+        </div>
+        <div class="grid">
+            <div class="icon">
+                <img src="goldencheetahlogo.png" alt="icons">
+            </div>
+            <div class="desc">
+                <h3>Fast Shipping</h3>
+                <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.
+
+                </p>
+            </div>
+        </div>
+        <div class="grid">
+            <div class="icon">
+                <img src="goldencheetahlogo.png" alt="icons">
+            </div>
+            <div class="desc">
+                <h3>Quality Assurance</h3>
+                <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.
+
+                </p>
+            </div>
+        </div>
+
+        <div class="grid">
+            <div class="icon">
+                <img src="goldencheetahlogo.png" alt="icons">
+            </div>
+            <div class="desc">
+                <h3>Less Pricing</h3>
+                <p>We provide the huge and heavy discounts offers of our Hon'ble 50 first customers to purchase the item.
+
+                </p>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- section for how it works -->
+    <section id="How_it_Works">
+        <!-- You can watch an embedded product video with id="video" -->
+        <h2 class="heading-title">How it Works</h2>
+        <video id="video" src="" controls autoplay></video>
+    </section>
+
+
+
+
+    <!-- section for pricing -->
+    <h2 class="heading-title">Pricing Package</h2>
+    <section id="Pricing">
+        <div class="box">
+            <div class="box-title">
+                <h2>Silver</h2>
+            </div>
+            <div class="box-desc">
+                <h3 class="box-price">600 PKR</h3>
+                <ul>
+                    <li>lorem Ipsum Sits doller</li>
+                    <li>lorem Ipsum Sits doller</li>
+                    <li>lorem Ipsum Sits doller</li>
+                    <li>lorem Ipsum Sits doller</li>
+                    <li>lorem Ipsum Sits doller</li>
+                    <li>lorem Ipsum Sits doller</li>
+                </ul>
+            </div>
+            <div class="choose-btn">
+                <button>Select</button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-title">
+                <h2>Silver</h2>
+            </div>
+            <div class="box-desc">
+                <h3 class="box-price">600 PKR</h3>
+                <ul>
+                    <li>lorem Ipsum Sits doller</li>
+                    <li>lorem Ipsum Sits doller</li>
+                    <li>lorem Ipsum Sits doller</li>
+                    <li>lorem Ipsum Sits doller</li>
+                    <li>lorem Ipsum Sits doller</li>
+                    <li>lorem Ipsum Sits doller</li>
+                </ul>
+            </div>
+            <div class="choose-btn">
+                <button>Select</button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-title">
+                <h2>Silver</h2>
+            </div>
+            <div class="box-desc">
+                <h3 class="box-price">600 PKR</h3>
+                <ul>
+                    <li>lorem Ipsum Sits doller</li>
+                    <li>lorem Ipsum Sits doller</li>
+                    <li>lorem Ipsum Sits doller</li>
+                    <li>lorem Ipsum Sits doller</li>
+                    <li>lorem Ipsum Sits doller</li>
+                    <li>lorem Ipsum Sits doller</li>
+                </ul>
+            </div>
+            <div class="choose-btn">
+                <button>Select</button>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>All rights reserved by Golden Cheetah &copysr;</p>
+        <address>
+            Street # 7, Khara Road, Kasur.
+        </address>
+    </footer>
+</body>
+
+</html>
