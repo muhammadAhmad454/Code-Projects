@@ -1,18 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masjid Clock</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="masjidClockStyles.css">
-    <title>Clock</title>
 </head>
+
 <body>
-    <main>
-        <section id="clock-container">
-            <h2>Clock abc</h2>
-            
-        </section>
-    </main>
+    <div id="main-container">
+        <div class="clock-container">
+            <div class="clock-label">
+                <p>نماز کے اوقات</p>
+            </div>
+
+
+            <div class="main-timer">
+                <div class="hour">
+                    <p>12</p>
+                </div>
+                <div class="time-colon">
+                    <p>:</p>
+                </div>
+                <div class="minute">
+                    <p>59</p>
+                </div>
+                <div class="time-colon">
+                    <p>:</p>
+                </div>
+                <div class="second">
+                    <p>02</p>
+                </div>
+            </div>
+
+            <div class="remain-time-container">
+                <div class="remain-time">
+                    <p>02</p>
+                </div>
+                <div class="label-remain-time">
+                    <p>بقیہ اوقات برائے جماعت</p>
+                </div>
+            </div>
+
+            <hr id="divider">
+
+            <div class="namaz-schedule-container">
+                <div class="namaz-time">
+                    <!-- step 1 -->
+                    <div class="indicator-box">
+                        <div class="indicator"></div>
+                    </div>
+                    <!-- step 2 -->
+                    <div class="namaz-sche-container">
+                        <p>04:30 am</p>
+                    </div>
+                    <!-- step 3 -->
+                    <div class="namaz-sche-label-container">
+                        <p>الفجر</p>
+                    </div>
+
+                </div>
+                <div class="namaz-time">
+                    <!-- step 1 -->
+                    <div class="indicator-box">
+                        <div class="indicator active"></div>
+                    </div>
+                    <!-- step 2 -->
+                    <div class="namaz-sche-container">
+                        <p>01:00 am</p>
+                    </div>
+                    <!-- step 3 -->
+                    <div class="namaz-sche-label-container">
+                        <p>الظہر</p>
+                    </div>
+                </div>
+                <div class="namaz-time">
+                    <!-- step 1 -->
+                    <div class="indicator-box">
+                        <div class="indicator"></div>
+                    </div>
+                    <!-- step 2 -->
+                    <div class="namaz-sche-container">
+                        <p>04:00 pm</p>
+                    </div>
+                    <!-- step 3 -->
+                    <div class="namaz-sche-label-container">
+                        <p>العصر</p>
+                    </div>
+                </div>
+                <div class="namaz-time">
+                    <!-- step 1 -->
+                    <div class="indicator-box">
+                        <div class="indicator"></div>
+                    </div>
+                    <!-- step 2 -->
+                    <div class="namaz-sche-container">
+                        <p>07:15 am</p>
+                    </div>
+                    <!-- step 3 -->
+                    <div class="namaz-sche-label-container">
+                        <p>المغرب</p>
+                    </div>
+                </div>
+                <div class="namaz-time">
+                    <!-- step 1 -->
+                    <div class="indicator-box">
+                        <div class="indicator"></div>
+                    </div>
+                    <!-- step 2 -->
+                    <div class="namaz-sche-container">
+                        <p>09:00 am</p>
+                    </div>
+                    <!-- step 3 -->
+                    <div class="namaz-sche-label-container">
+                        <p>العشا</p>
+                    </div>
+                </div>
+                <div class="namaz-time">
+                    <!-- step 1 -->
+                    <div class="indicator-box">
+                        <div class="indicator"></div>
+                    </div>
+                    <!-- step 2 -->
+                    <div class="namaz-sche-container">
+                        <p>01:30 pm</p>
+                    </div>
+                    <!-- step 3 -->
+                    <div class="namaz-sche-label-container">
+                        <p>نماز الجمعہ</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="date-weather-container">
+                <div class="weather-box">
+                    <p>28 C</p>
+                </div>
+                <div class="date-box">
+                    <p>17.July.2024</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="main.js"></script>
 </body>
+
 </html>

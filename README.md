@@ -1,3 +1,6 @@
+# UPDATE
+Masjid clock project updated. 
+
 # Solution
 error resolve and files corrected 
 

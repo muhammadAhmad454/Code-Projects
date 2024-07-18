@@ -1,0 +1,264 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#main-container {
+    background: #E4E0D1;
+    width: 100%;
+    height: 100vh;
+    /* flex-shrink: 0; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock-container {
+    width: 25%;
+    height: 90vh;
+    /* flex-shrink: 0; */
+    border: 3px solid rgba(0, 0, 0, 0.75);
+    background: #28272C;
+    box-shadow: -3px -3px 5px 2px rgba(0, 0, 0, 0.25), 3px 3px 5px 2px rgba(0, 0, 0, 0.25);
+}
+
+.clock-label {
+    width: 100%;
+    height: 80px;
+    /* flex-shrink: 0; */
+    background: #28272C;
+}
+
+.clock-label p {
+    color: #FFF;
+    text-align: center;
+    font-family: "Noto Nastaliq Urdu";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 250.175%;
+}
+
+.main-timer {
+    width: 90%;
+    height: 80px;
+    background: #28272C;
+    margin: 5px auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.hour,
+.minute {
+    width: 25%;
+    height: 80%;
+    background: #343333;
+}
+
+.second {
+    width: 25%;
+    height: 80%;
+    background: #202020;
+}
+
+.main-timer p {
+    color: #F00;
+    text-align: center;
+    font-family: "DotGothic16", sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 149.392%;
+    letter-spacing: 5.6px;
+}
+
+.time-colon p {
+    color: #FFF;
+}
+
+.remain-time-container {
+    width: 90%;
+    height: 80px;
+    background: #28272C;
+    margin: 5px auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.remain-time {
+    width: 25%;
+    height: 80%;
+    background: #202020;
+}
+
+.remain-time p {
+
+    font-family: "DotGothic16", sans-serif;
+    color: #F9FE00;
+    text-align: center;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 149.392%;
+}
+
+.label-remain-time {
+    width: 50%;
+    height: 80%;
+    background: #28272C;
+}
+
+.label-remain-time p {
+    color: #FFF;
+    text-align: center;
+    font-family: "Noto Nastaliq Urdu";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+#divider {
+    width: 100%;
+    height: 5px;
+    background: #202020;
+    border: none;
+}
+
+.namaz-schedule-container {
+    width: 100%;
+    height: 50%;
+    background: #28272C;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.namaz-time {
+    width: 80%;
+    height: 50px;
+    background: #28272C;
+    margin: 5px auto;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.indicator-box {
+    width: 25%;
+    height: 50px;
+    background: #28272C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.indicator {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #202020;
+}
+
+.active {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #14ff00;
+    filter: drop-shadow(2px 0px 2px #14FF00) drop-shadow(-2px 0px 2px #14FF00) drop-shadow(0px 2px 2px #14FF00) drop-shadow(0px -2px 2px #14FF00);
+}
+
+.namaz-sche-container {
+    width: 50%;
+    height: 50px;
+    background: #28272C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.namaz-sche-container p {
+    color: #F00;
+    text-align: center;
+    font-family: "DotGothic16", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 149.392%;
+    /* 35.854px */
+}
+
+.namaz-sche-label-container {
+    width: 25%;
+    height: 50px;
+    background: #28272C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.namaz-sche-label-container p {
+    color: #FFF;
+    text-align: center;
+    font-family: "Noto Nastaliq Urdu";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    /* 140% */
+}
+
+.date-weather-container {
+    width: 100%;
+    height: 10%;
+    background: #202020;
+    margin: 10px auto 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 15px;
+    align-items:center;
+    flex-direction: row;
+}
+.weather-box{
+    width: 25%;
+    height: 60px;
+    background: #202020;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.weather-box p{
+    font-family: "DotGothic16", sans-serif;
+    text-align: center;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 149.392%;
+
+    color: #00A3FF;
+}
+.date-box{
+    width: 55%;
+    height: 60px;
+    background: #28272C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.date-box p{
+    color: #F00;
+    text-align: center;
+    font-family: "DotGothic16", sans-serif;
+    font-size: 24px;
+font-style: normal;
+font-weight: 800;
+line-height: 149.392%;
+}
